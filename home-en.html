@@ -49,10 +49,10 @@
             color: #FFC107;
             font-weight: 700;
         }
-        .services {
+        .content-section {
             padding: 60px 5%;
         }
-        .services h2 {
+        .content-section h2 {
             text-align: center;
             font-size: 2.5rem;
             font-weight: 900;
@@ -102,6 +102,43 @@
             color: #FFC107;
             font-weight: bold;
         }
+        
+        /* New Contact Form Styles */
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #1F1F1F;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 40px;
+            border: 2px solid #FFC107;
+            background-color: #FFC107;
+            color: #121212;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: transparent;
+            color: #FFC107;
+        }
+        
         .footer {
             text-align: center;
             padding: 20px;
@@ -124,7 +161,7 @@
             <p>Your Licensed Technician on the Go</p>
         </section>
 
-        <section class="services">
+        <section class="content-section">
             <h2>Our Expertise</h2>
             <div class="service-grid">
                 <div class="service-card">
@@ -143,6 +180,29 @@
                 </div>
             </div>
         </section>
+
+        <!-- NEW CONTACT FORM SECTION -->
+        <section class="content-section">
+            <h2>Contact Us</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                <!-- IMPORTANT: Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="5e19afda-8276-4e86-b105-23cff085eec2">
+
+                <!-- Form Inputs -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+        <!-- END CONTACT FORM SECTION -->
+
     </main>
 
     <footer class="footer">
