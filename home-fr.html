@@ -147,6 +147,13 @@
             font-size: 0.9rem;
             color: #888;
         }
+        .form-intro {
+            text-align: center;
+            max-width: 600px;
+            margin: -20px auto 30px auto; /* Adjusts spacing around the title */
+            color: #bbb;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -184,10 +191,13 @@
         <!-- NOUVELLE SECTION FORMULAIRE DE CONTACT -->
         <section class="content-section">
             <h2>Contactez-Nous</h2>
+            <!-- Ceci est la nouvelle phrase -->
+            <p class="form-intro">Pour des questions générales ou des demandes d'information, veuillez utiliser le formulaire ci-dessous. Pour les rendez-vous, ceci sera géré par un autre système.</p>
+
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-                <!-- IMPORTANT: Remplacez par votre Clé d'Accès -->
-                <input type="hidden" name="access_key" value="5e19afda-8276-4e86-b105-23cff085eec2">
+                <!-- IMPORTANT: Assurez-vous que votre Clé d'Accès est ici -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
                 <!-- Champs du formulaire -->
                 <input type="text" name="name" placeholder="Votre Nom" required>
