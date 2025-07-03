@@ -147,6 +147,13 @@
             font-size: 0.9rem;
             color: #888;
         }
+        .form-intro {
+            text-align: center;
+            max-width: 600px;
+            margin: -20px auto 30px auto; /* Adjusts spacing around the title */
+            color: #bbb;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -184,10 +191,13 @@
         <!-- NEW CONTACT FORM SECTION -->
         <section class="content-section">
             <h2>Contact Us</h2>
+            <!-- This is the new sentence -->
+            <p class="form-intro">For general questions or inquiries, please use the form below. For appointments, this will be handled by another system.</p>
+    
             <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
-                <!-- IMPORTANT: Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="5e19afda-8276-4e86-b105-23cff085eec2">
+                <!-- IMPORTANT: Make sure your Access Key is here -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
 
                 <!-- Form Inputs -->
                 <input type="text" name="name" placeholder="Your Name" required>
@@ -196,7 +206,7 @@
 
                 <!-- Honeypot Spam Protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
+        
                 <button type="submit">Send Message</button>
 
             </form>
