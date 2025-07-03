@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.G.M. Mobile Mechanic - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #EAEAEA;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #1F1F1F;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #FFC107;
+        }
+        .header .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #FFFFFF;
+        }
+        .header a {
+            color: #FFC107;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #1F1F1F;
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #FFC107;
+            font-weight: 700;
+        }
+        .services {
+            padding: 60px 5%;
+        }
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            color: #FFFFFF;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background-color: #1F1F1F;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFC107;
+            margin-top: 0;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-card li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        .service-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #FFC107;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #1F1F1F;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">D.G.M.</div>
+        <a href="index.html">Change Language</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>D.G.M. Mobile Mechanic</h1>
+            <p>Your Licensed Technician on the Go</p>
+        </section>
+
+        <section class="services">
+            <h2>Our Expertise</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Automotive Services</h3>
+                    <ul>
+                        <li>Fuel Injection</li>
+                        <li>Air Conditioning</li>
+                        <li>All Automotive Repair</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Small Engine Services</h3>
+                    <ul>
+                        <li>All types of small engine repairs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 D.G.M. Mobile Mechanic. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
